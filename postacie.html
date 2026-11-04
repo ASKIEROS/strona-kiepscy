@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna - Lab 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="menuup">
+            <img src="ikona.png" class="itemup">
+    </div>
+    
+    <nav class="menu">
+        <div class="container">
+            <img src = "puszka.png" class="item">
+
+        </div>
+        <ul>
+            <li><a href ="index.html">Strona główna</a></li>
+            <li><a href ="postacie.html">Postacie</a></li>
+            <li><a href ="galeria.html">Galeria</a></li>
+            <li><a href ="kontakt.html">Kontakt</a></li>
+        </ul>    
+
+    </nav>
+<div class="postacie-pojemnik">
+    <h2>Główni Bohaterowie</h2>
+
+    <div class="postac-karta">
+        <div class="postac-opis">
+            <h3>Ferdynand Kiepski</h3>
+            <p>Głowa rodziny, absolutny przeciwnik jakiejkolwiek pracy zarobkowej. Jego życiowym celem jest "zarobić, a się nie narobić". Miłośnik piwa Mocny Full i spędzania czasu przed telewizorem.</p>
+            <button class="przycisk-cytat" onclick="showhide('cytat-ferdek')">Pokaż/Ukryj cytat</button>
+            <p id="cytat-ferdek" class="ukryty-cytat" style="display: none;">"A w pośredniaku byłem, to pracy dla ludzi z moim wykształceniem nie było!"</p>
+        </div>
+        <img class="postac-zdjecie" src="ferdek.jpg" alt="Ferdek Kiepski">
+    </div>
+
+    <div class="postac-karta">
+        <div class="postac-opis">
+            <h3>Marian Paździoch</h3>
+            <p>Sąsiad Kiepskich, handlarz bielizną na bazarze. Postać niezwykle sprytna, często cyniczna i dwulicowa. Stały bywalec na korytarzu, dzielący się z Ferdkiem nowymi, absurdalnymi pomysłami na biznes.</p>
+            <button class="przycisk-cytat" onclick="showhide('cytat-pazdzioch')">Pokaż/Ukryj cytat</button>
+            <p id="cytat-pazdzioch" class="ukryty-cytat" style="display: none;">"Panie, to są jakieś jawne kpiny!"</p>
+        </div>
+        <img class="postac-zdjecie" src="pazdzioch.jpg" alt="Marian Paździoch">
+    </div>
+
+    <div class="postac-karta">
+        <div class="postac-opis">
+            <h3>Arnold Boczek</h3>
+            <p>Niezbyt bystry, ale sympatyczny rzeźnik z wyższego piętra. Słynie z naiwności oraz tego, że nielegalnie i nagminnie korzysta z prywatnej toalety na piętrze Kiepskich, co doprowadza Ferdka do szału.</p>
+            <button class="przycisk-cytat" onclick="showhide('cytat-boczek')">Pokaż/Ukryj cytat</button>
+            <p id="cytat-boczek" class="ukryty-cytat" style="display: none;">"W mordę jeża, panie Ferdku!"</p>
+        
+        </div>
+        <img class="postac-zdjecie" src="boczek.jpg" alt="Arnold Boczek">
+    </div>
+
+</div>
+</body>
+</html>

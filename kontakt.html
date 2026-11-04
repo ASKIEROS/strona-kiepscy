@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona główna - Lab 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menuup">
+            <img src="ikona.png" class="itemup">
+    </div>
+    
+    <nav class="menu">
+        <div class="container">
+            <img src = "puszka.png" class="item">
+
+        </div>
+        <ul>
+            <li><a href ="index.html">Strona główna</a></li>
+            <li><a href ="postacie.html">Postacie</a></li>
+            <li><a href ="galeria.html">Galeria</a></li>
+            <li><a href ="kontakt.html">Kontakt</a></li>
+        </ul>    
+
+    </nav>
+<div class="formularz-glowny">
+    <form class = "formularz-kontaktowy" action ="#" method="post">
+        <label for = "email">E-mail</label>
+        <input type="text" id = "email" name="email" placeholder="Podaj swój e-mail" required>
+    <label for="temat">Temat wiadomości:</label>
+    <select id="temat" name="temat" required>
+        <option value="" disabled selected>Wybierz temat...</option>
+        <option value="uwagi">Uwagi do strony</option>
+        <option value="wspolpraca">Propozycja współpracy</option>
+        <option value="inne">Inne pytania</option>
+    </select>
+    <label for="wiadomosc">Wiadomość:</label>
+    <textarea id="wiadomosc" name="wiadomosc" placeholder="Wpisz treść...." rows="5" required></textarea>
+    <input type="submit" value="Wyślij">
+    </form>
+</div>
+
+</body>
+</html>
