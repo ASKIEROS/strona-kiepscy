@@ -348,27 +348,28 @@ aside {
 
 
 @media (max-width: 768px) {
-    .postac-karta {
+    .uklad {
+        display: flex;
         flex-direction: column;
-        text-align: center;
     }
 
-    .postac-zdjecie {
-        margin-top: 15px;
-    }
-
-    .galeria-zdjec img {
-        width: calc(50% - 10px);
-    }
-}
-
-@media (max-width: 480px) {
-    .galeria-zdjec img {
+    .lewa, .prawa {
         width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
     }
-}
 
-@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
     .postac-karta {
         flex-direction: column;
         text-align: center;
