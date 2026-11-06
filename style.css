@@ -12,7 +12,7 @@ body {
 
 .main-container {
       height: 30%;
-      display: fl ex;
+      display: flex;
       align-items: center;
       justify-content: center;
 }
@@ -63,7 +63,7 @@ th, td {
 }
 
 .itemup{
-      width: 200x;
+      width: 200px;
       height: 100px;
       object-fit: cover;
 }

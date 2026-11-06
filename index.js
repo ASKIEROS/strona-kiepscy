@@ -1,14 +1,14 @@
 setTimeout(() => {
-    console.log('Test JS')
+    console.log('Test JS');
 }, 4000);
 
 function showhide(id) {
-  let element = document.getElementById(id);
-  if (element.style.display === "none") {
-    element.style.display = "block";
-  } else {
-    element.style.display = "none";
-  }
+    let element = document.getElementById(id);
+    if (element.style.display === "none") {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    }
 }
 
 function walidacjaFormularza(event) {
@@ -28,5 +28,6 @@ function walidacjaFormularza(event) {
     }
 
     alert("Wiadomość wysłana pomyślnie!");
-    return true;
+    event.preventDefault(); 
+    return false;
 }
