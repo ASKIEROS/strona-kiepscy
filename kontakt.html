@@ -5,6 +5,7 @@
     <title>Strona główna - Lab 1</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="menuup">
@@ -25,7 +26,7 @@
 
     </nav>
 <div class="formularz-glowny">
-    <form class = "formularz-kontaktowy" action ="#" method="post">
+    <form class = "formularz-kontaktowy" action ="#" method="post" onsubmit="return waidacjeFormularza(event)">
         <label for = "email">E-mail</label>
         <input type="text" id = "email" name="email" placeholder="Podaj swój e-mail" required>
     <label for="temat">Temat wiadomości:</label>

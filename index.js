@@ -10,3 +10,23 @@ function showhide(id) {
     element.style.display = "none";
   }
 }
+
+function walidacjaFormularza(event) {
+    let email = document.getElementById("email").value;
+    let wiadomosc = document.getElementById("wiadomosc").value;
+
+    if (!email.includes("@")) {
+        alert("Błąd: Wpisany adres e-mail jest niepoprawny (brakuje znaku @).");
+        event.preventDefault();   
+        return false;
+    }
+
+    if (wiadomosc.length < 10) {
+        alert("Błąd: Twoja wiadomość jest za krótka. Wpisz minimum 10 znaków.");
+        event.preventDefault(); 
+        return false;
+    }
+
+    alert("Wiadomość wysłana pomyślnie!");
+    return true;
+}
